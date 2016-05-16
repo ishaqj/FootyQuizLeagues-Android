@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">FootyQuiz Leagues</string>
+    <string name="action_settings">Settings</string>
+    <string name="next">Next Question</string>
+    <string name="title_activity_result">Results</string>
+    <string name="title_activity_level2">La Liga</string>
+    <string name="title_activity_main">Footy Quiz</string>
+    <string name="title_activity_leagues">Leagues</string>
+    <string name="title_activity_result_page">ResultPageActivity</string>
+    <string name="timer">"Time: "</string>
+    <string name="score">"Score: "</string>
+    <string name="highscore">"High Score: "</string>
+    <string name="title_activity_seriea">SerieaActivity</string>
+</resources>

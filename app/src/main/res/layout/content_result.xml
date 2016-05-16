@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/selectleagues"
+    tools:context=".ResultActivity">
+
+    <TextView
+        android:id="@+id/textResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.08"
+        android:text="Your knowledge:"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:paddingLeft="10dp"
+        android:textColor="#FFFF"
+        android:layout_below="@+id/resultScore"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Round"
+        android:id="@+id/btnLevel2"
+        android:onClick="btnNewRoundClicked"
+        android:visibility="visible"
+        android:layout_below="@+id/textResult"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Main Menu"
+        android:id="@+id/btnLeagues"
+        android:onClick="btnMainMenuClicked"
+        android:visibility="visible"
+        android:layout_below="@+id/btnLevel2"
+        android:layout_alignRight="@+id/btnLevel2"
+        android:layout_alignEnd="@+id/btnLevel2"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Score"
+        android:id="@+id/resultScore"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="203dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

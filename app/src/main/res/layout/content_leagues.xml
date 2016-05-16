@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="@drawable/selectleagues"
+    tools:context="com.footyquizleagues.LeaguesActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Select a League"
+        android:id="@+id/league"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Premier League"
+        android:id="@+id/button4"
+        android:onClick="btnEPLClicked"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="28dp"
+        android:layout_alignBottom="@+id/eplimg"
+        android:layout_toRightOf="@+id/eplimg"
+        android:layout_toEndOf="@+id/eplimg" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="La Liga"
+        android:id="@+id/button5"
+        android:onClick="btnLaLigaClicked"
+        android:layout_marginTop="31dp"
+        android:layout_alignTop="@+id/laligaimg"
+        android:layout_alignLeft="@+id/button4"
+        android:layout_alignStart="@+id/button4"
+        android:layout_alignRight="@+id/button4"
+        android:layout_alignEnd="@+id/button4" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Serie A"
+        android:id="@+id/button6"
+        android:onClick="btnSerieAClicked"
+        android:layout_marginTop="30dp"
+        android:layout_alignTop="@+id/seriea"
+        android:layout_alignLeft="@+id/button4"
+        android:layout_alignStart="@+id/button4"
+        android:layout_alignRight="@+id/button5"
+        android:layout_alignEnd="@+id/button5" />
+
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="fitXY"
+        android:id="@+id/eplimg"
+        android:src="@drawable/epllogo"
+        android:visibility="visible"
+        android:layout_below="@+id/league"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="22dp" />
+
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="fitXY"
+        android:id="@+id/laligaimg"
+        android:src="@drawable/laliga"
+        android:visibility="visible"
+        android:layout_below="@+id/eplimg"
+        android:layout_alignLeft="@+id/eplimg"
+        android:layout_alignStart="@+id/eplimg"
+        android:layout_marginTop="28dp" />
+
+    <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/seriea"
+            android:src="@drawable/seriea"
+        android:visibility="visible"
+        android:layout_below="@+id/laligaimg"
+        android:layout_alignLeft="@+id/laligaimg"
+        android:layout_alignStart="@+id/laligaimg"
+        android:layout_marginTop="39dp" />
+
+
+</RelativeLayout>
